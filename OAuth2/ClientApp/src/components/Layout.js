@@ -7,9 +7,11 @@ export class Layout extends Component {
 
   render () {
     return (
-      <div>
-        <NavMenu />
-        <Container>
+        <div>
+            <div style={{ margin: 10  }}>
+                <img height="50" src="https://cdn.contactcenterworld.com/images/company/whisbi-technology-600px-logo.png" />
+                </div>
+        <Container style={{ textAlign: 'center' }}>
           {this.props.children}
         </Container>
       </div>
