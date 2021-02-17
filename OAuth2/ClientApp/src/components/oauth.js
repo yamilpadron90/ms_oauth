@@ -11,7 +11,7 @@ export default (props) => {
     const [text, setText] = useState(true)
 
     const accept = useCallback(() => {
-        fetch('/answer/' + name + '/true')
+        fetch('api/answer/' + name + '/true')
             .then(res => {
                 return res.text()
             })
@@ -25,7 +25,7 @@ export default (props) => {
     }, [name])
 
     const reject = useCallback(() => {
-        fetch('/answer/' + name + '/false')
+        fetch('/api/answer/' + name + '/false')
             .then(res => {
                 return res.text()
             })
