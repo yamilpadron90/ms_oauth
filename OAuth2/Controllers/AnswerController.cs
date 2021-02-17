@@ -21,7 +21,7 @@ namespace OAuth2.Controllers
 
         // GET api/<AnswerController>/5
         [HttpGet("{id}")]
-        public bool Get(string p_EmailAddress)
+        public bool Get(string p_EmailAddress, bool p_HasAccepted)
         {
             bool l_bSuccessful = true;
 
